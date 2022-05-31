@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1c1c1c;
+  background-image: url("https://cdn.discordapp.com/attachments/928295659071754260/972562795902140548/Banner2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.mobile-navigation {
+  display: none;
+}
+
+nav > .mobile-navigation > div {
+  height: 3px;
+  width: 23px;
+  background-color: #cfcfcf;
+  margin: 5px;
+}
+
+button {
+  padding: 7px;
+  background-color: #6d0366;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: white;
+  font-weight: 800;
+  font-family: "Montserrat";
+  transition: all 0.7s;
+}
+
+button:hover {
+  background-color: #b2096c;
+}
+
+form {
+  background-color: rgb(209, 209, 209);
+  padding: 20px;
+  width: fit-content;
+  border-radius: 7px;
+  margin-top: 5%;
+}
+
+.inputs > input {
+  width: 75%;
+  border: 1px solid rgb(135, 135, 135);
+}
+
+.below-navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.landing-page {
+  max-width: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+}
+
+nav {
+  background-color: #1c1c1c;
+  color: #cfcfcf;
+  display: flex;
+  max-height: 120px;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+nav > ul > li > a {
+  color: #cfcfcf;
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+  cursor: default;
+  color: #6363e9;
+}
+
+.logo {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 30%;
+}
+
+@media screen and (max-width: 810px) {
+  ul {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  ul {
+    display: none;
+  }
+
+  .mobile-navigation {
+    display: block;
+  }
+
+  form {
+    border-radius: 0px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  ul {
+    display: none;
+  }
+
+  .mobile-navigation {
+    display: block;
+  }
+}
